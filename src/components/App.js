@@ -18,9 +18,10 @@ const App = () => {
       console.error('Error fetching data:', error);
     } finally {
       setLoading(false);
-    }
+        }
   };
- useEffect(() => {
+
+  useEffect(() => {
     if (id) {
       fetchData();
     }
@@ -39,4 +40,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
